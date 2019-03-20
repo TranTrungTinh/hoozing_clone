@@ -1,0 +1,27 @@
+.thumbnail {
+    max-width: 260px;
+    margin: 10px 5px;
+}
+  
+.ant-carousel .custom-slick-arrow {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: #000;
+  background-color: rgba(31,45,61,.11);
+  opacity: 0.3;
+}
+.ant-carousel .custom-slick-arrow:before {
+  display: none;
+}
+.ant-carousel .custom-slick-arrow:hover {
+  color: #fff;
+}
+
+.thumbnail-img-cover img {
+  max-width: 260px;
+  max-height: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto
+}

@@ -1,0 +1,80 @@
+/* Hassle free */
+.renting-content h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 60px 0; 
+}
+
+.renting-list-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.renting-item-angle {
+    font-size: 36px;
+    color: #aaa;
+    font-weight: 300;
+}
+.renting-item i {
+    font-size: 48px;
+    color: #2378a7;
+}
+.renting-item h4 {
+    padding: 15px 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.renting-item p {
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 250px;
+}
+
+/* Feature Properties */
+.feature-properties-content {
+    margin: 100px 0 0 0;
+}
+.feature-properties-content h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 60px 0;
+}
+
+.feature-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.active {
+    border: solid 1px #000;
+}
+.active:hover {
+    background: none !important;
+}
+
+.feature-tags-item:hover {
+    background: #f3f3f3;
+}
+.feature-tags-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #aaa;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.feature-list {
+    margin: 30px 0 0 0;
+}
+.feature-list-all {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+.feature-list-all button {
+    width: 100px;
+}

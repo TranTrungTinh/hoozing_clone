@@ -12,6 +12,11 @@ export default {
   html, body {
     font-family: 'Montserrat', sans-serif;
   }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 </style>
 
 
