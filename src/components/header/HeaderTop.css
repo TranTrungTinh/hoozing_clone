@@ -1,0 +1,53 @@
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-top-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.header-top-navlink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlink-item {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navlink-item-special {
+    display: inline-block;
+    background-color: #2aadf3;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.header-top-search .top-search {
+    width: 300px;
+}
+
+.header-top-language .top-selected {
+    width: 160px;
+}
+
+.top-selected-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-account {
+    cursor: pointer;
+}
+.header-top-account .top-account {
+    font-size: 16px;
+}
