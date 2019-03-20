@@ -1,6 +1,6 @@
 .thumbnail {
     max-width: 260px;
-    margin: 10px 5px;
+    margin: 10px auto;
 }
   
 .ant-carousel .custom-slick-arrow {
@@ -24,4 +24,20 @@
   height: auto;
   display: block;
   margin: 0 auto
+}
+
+.thumbnail-img {
+  position: relative;
+}
+
+.thumbnail-tag-price {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  left: -2px;
+  top: 145px;
 }

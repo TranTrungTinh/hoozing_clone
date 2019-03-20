@@ -12,6 +12,10 @@
                 <div class="thumbnail-img-cover"><img src="https://images.unsplash.com/photo-1552873904-593d8949b27f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt=""></div>
                 <div class="thumbnail-img-cover"><img src="https://images.unsplash.com/photo-1553052037-eb1fa8d3b1ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt=""></div>
             </a-carousel>
+            <div class="thumbnail-tag-price">
+                <span class="tag-symbol">$</span>
+                <span class="tag-price">850</span>
+            </div>
         </div>
         <p class="thumbnail-code">HOUSE CODE 567</p>
         <p class="thumbnail-title">Artistic Elegant 2 Bedroom Apartment In District 2</p>
