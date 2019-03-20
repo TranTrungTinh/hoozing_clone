@@ -2,10 +2,11 @@
 <style src="./Home.css" scoped></style>
 
 <script>
+import Welcome from '@/components/welcome/Welcome';
 import Thumbnail from '@/components/thumbnail/Thumbnail';
 
 export default {
-  components: { Thumbnail },
+  components: { Thumbnail, Welcome },
   data() {
       return {
           listItem: [

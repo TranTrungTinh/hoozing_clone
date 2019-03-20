@@ -1,68 +1,70 @@
-<div class="container">
-    <div style="height: 400px"></div>
-    <div class="renting-content">
-        <h1>Hassle-Free Renting</h1>
-        <div class="renting-list-content">
-        <div class="renting-item">
-            <i class="fas fa-search"></i>
-            <h4>Search</h4>
-            <p>Find a long-term rental place that fits your preferences</p>
+<div class="container-fluid">
+    <welcome />
+    <div class="container">
+        <div class="renting-content">
+            <h1>Hassle-Free Renting</h1>
+            <div class="renting-list-content">
+            <div class="renting-item">
+                <i class="fas fa-search"></i>
+                <h4>Search</h4>
+                <p>Find a long-term rental place that fits your preferences</p>
+            </div>
+            <div class="renting-item-angle"><i class="fas fa-angle-right"></i></div>
+            <div class="renting-item">
+                <i class="far fa-map"></i>
+                <h4>Visit</h4>
+                <p>Find a long-term rental place that fits your preferences</p>
+            </div>
+            <div class="renting-item-angle"><i class="fas fa-angle-right"></i></div>
+            <div class="renting-item">
+                <i class="fas fa-lock"></i>
+                <h4>Contract</h4>
+                <p>Find a long-term rental place that fits your preferences</p>
+            </div>
+            <div class="renting-item-angle"><i class="fas fa-angle-right"></i></div>
+            <div class="renting-item">
+                <i class="fas fa-home"></i>
+                <h4>Move-in</h4>
+                <p>Find a long-term rental place that fits your preferences</p>
+            </div>
+            </div>
         </div>
-        <div class="renting-item-angle"><i class="fas fa-angle-right"></i></div>
-        <div class="renting-item">
-            <i class="far fa-map"></i>
-            <h4>Visit</h4>
-            <p>Find a long-term rental place that fits your preferences</p>
-        </div>
-        <div class="renting-item-angle"><i class="fas fa-angle-right"></i></div>
-        <div class="renting-item">
-            <i class="fas fa-lock"></i>
-            <h4>Contract</h4>
-            <p>Find a long-term rental place that fits your preferences</p>
-        </div>
-        <div class="renting-item-angle"><i class="fas fa-angle-right"></i></div>
-        <div class="renting-item">
-            <i class="fas fa-home"></i>
-            <h4>Move-in</h4>
-            <p>Find a long-term rental place that fits your preferences</p>
-        </div>
-        </div>
-    </div>
 
-    <div class="feature-properties-content">
-        <h1>Feature Properties</h1>
-        <div class="feature-tags">
-            <div class="feature-tags-item active">All</div>
-            <div class="feature-tags-item">
-                <span>DISTRICT 1</span>
+        <div class="feature-properties-content">
+            <h1>Feature Properties</h1>
+            <div class="feature-tags">
+                <div class="feature-tags-item active">All</div>
+                <div class="feature-tags-item">
+                    <span>DISTRICT 1</span>
+                </div>
+                <div class="feature-tags-item">
+                    <span>DISTRICT 2</span>
+                </div>
+                <div class="feature-tags-item">
+                    <span>DISTRICT 3</span>
+                </div>
+                <div class="feature-tags-item">
+                    <span>DISTRICT 4</span>
+                </div>
+                <div class="feature-tags-item">
+                    <span>DISTRICT 5</span>
+                </div>
+                <div class="feature-tags-item">
+                    <span>DISTRICT 7</span>
+                </div>
+                <div class="feature-tags-item">
+                    <span>BINH THANH</span>
+                </div>
             </div>
-            <div class="feature-tags-item">
-                <span>DISTRICT 2</span>
+            <div class="feature-list">
+                <a-row :gutter="16">
+                    <a-col :xs="24" :sm="12" :md="8" :lg="6"
+                        v-for="item in listItem" :key="item.id">
+                        <thumbnail />
+                    </a-col>
+                </a-row>
+                <div class="feature-list-all"><a-button type="primary" size="large" >VIEW ALL</a-button></div>
             </div>
-            <div class="feature-tags-item">
-                <span>DISTRICT 3</span>
-            </div>
-            <div class="feature-tags-item">
-                <span>DISTRICT 4</span>
-            </div>
-            <div class="feature-tags-item">
-                <span>DISTRICT 5</span>
-            </div>
-            <div class="feature-tags-item">
-                <span>DISTRICT 7</span>
-            </div>
-            <div class="feature-tags-item">
-                <span>BINH THANH</span>
-            </div>
-        </div>
-        <div class="feature-list">
-            <a-row :gutter="16">
-                <a-col :xs="24" :sm="12" :md="8" :lg="6"
-                    v-for="item in listItem" :key="item.id">
-                    <thumbnail />
-                </a-col>
-            </a-row>
-            <div class="feature-list-all"><a-button type="primary" size="large" >VIEW ALL</a-button></div>
         </div>
     </div>
 </div>

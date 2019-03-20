@@ -1,0 +1,87 @@
+.welcome-main {
+  position: relative;
+}
+.welcome-main-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 700px;
+}
+.welcome-main-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.vue-typer >>> .custom.char.typed,
+.vue-typer >>> .custom.char.selected {
+  color: #fff;
+}
+
+.welcome-popular-tag {
+  font-size: 16px;
+  color: #fff
+}
+.popular-tag-item {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.welcome-content-input {
+  margin: 20px 0 0 0;
+}
+.welcome-input-search {
+  margin: 30px 0 0 0;
+  background: #e25e66;
+  color: #fff;
+  border: none;
+  width: 120px;
+}
+.welcome-input-search:hover {
+  background: #ea898f;
+  color: #fff;
+  border: none;
+}
+
+.welcome-total-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+.welcome-total-properties {
+  border-right: solid 0.5px #fff;
+}
+.welcome-total-users {
+  border-left: solid 0.5px #fff;
+}
+.welcome-total-properties,
+.welcome-total-users {
+  width: 200px;
+  padding: 5px;
+  background: rgba(0,0,0,.1);
+  color: #fff;
+}
+
+.welcome-sub-content {
+  background: #f3f3f3;
+  font-size: 16px;
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+
+
+/* Extend class */
+.border-bt {
+  border-bottom: solid 1px #fff;
+}
+.mt-30 {
+  margin-top: 30px 
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-36 {
+  font-size: 36px
+}
