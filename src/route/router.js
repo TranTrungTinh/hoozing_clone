@@ -4,11 +4,11 @@ import Router from 'vue-router';
 // @Layout
 import Layout from '@/components/layout/Layout';
 
-// @Home page
+// @Main app page
 import HomePage from '@/views/HomePage/Home';
+import ListPage from '@/views/ListPage/List';
 
-Vue.use(Router)
-
+Vue.use(Router);
 export default new Router({
   mode: 'history',
   // base: process.env.BASE_URL,
@@ -21,6 +21,11 @@ export default new Router({
           path: '',
           name: 'HomePage',
           component: HomePage
+        },
+        {
+          path: '/lists',
+          name: 'ListPage',
+          component: ListPage
         }
       ]
     },

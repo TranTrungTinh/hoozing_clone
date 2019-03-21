@@ -1,0 +1,17 @@
+.filtered-box {
+    padding: 30px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.filtered-button {
+    float: right;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
