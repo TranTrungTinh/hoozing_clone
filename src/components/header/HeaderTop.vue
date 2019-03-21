@@ -1,12 +1,16 @@
 <template>
     <div class="header-top">
         <div class="header-top-logo">
-            <img src="@/assets/skg-logo.png" alt="Brand Logo" />
+            <router-link to="/">
+                <img src="@/assets/skg-logo.png" alt="Brand Logo" />
+            </router-link>
         </div>
         <div class="header-top-navlink">
             <div class="navlink-item">Rent</div>
             <div class="navlink-item">
-                <span class="navlink-item-special">List Your House</span>
+                <router-link to="/lists">
+                    <span class="navlink-item-special">List Your House</span>
+                </router-link>
             </div>
             <div class="navlink-item">Careers</div>
             <div class="navlink-item">Blog</div>

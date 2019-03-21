@@ -18,6 +18,7 @@ const options = {
     opacity: "0.6s",
     termination: 300
   },
+  autoFinish: false,
   autoRevert: true,
   inverse: false
 };

@@ -2,11 +2,12 @@
 <style src="./Home.css" scoped></style>
 
 <script>
+import Widget from '@/components/widget/Widget';
 import Welcome from '@/components/welcome/Welcome';
 import Thumbnail from '@/components/thumbnail/Thumbnail';
 
 export default {
-  components: { Thumbnail, Welcome },
+  components: { Thumbnail, Welcome, Widget },
   data() {
       return {
           listItem: [
@@ -22,7 +23,12 @@ export default {
           selected: 1,
           classArray: ['feature-tags-item']
       }
-  }
+  },
+  mounted() {
+    setTimeout(() => {
+        this.$refs.loading.done()
+    }, 1000)
+}
 }
 </script>
 

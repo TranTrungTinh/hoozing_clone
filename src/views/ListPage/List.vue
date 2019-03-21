@@ -1,56 +1,8 @@
-<template>
-    <section class="lists-content-page">
-        <filtered />
-        <div class="list-content-main">
-            <breadcrumb />
-            <h1>RENT FULLY FURNISHED APARTMENT, 2 BEDROOM, 3 BEDROOM, HCMC</h1>
-            <a-row class="list-content-view">
-                <a-col :span="4">
-                    <span>Show 15 in 207 Listing Sort by</span>
-                </a-col>
-                <a-col :span="4"><selected /></a-col>
-                <a-col :span="4">
-                    <div class="view-select">
-                        <span @click="selected = 1" :class="[classArray ,{ active:selected == 1 }]">
-                            <a-tooltip placement="top" >
-                                <template slot="title">
-                                    <span>Grid</span>
-                                </template>
-                                <i class="fas fa-th-large"></i>
-                            </a-tooltip>
-                        </span>
-                        <span @click="selected = 2" :class="[classArray ,{ active:selected == 2 }]">
-                            <a-tooltip placement="top" >
-                                <template slot="title">
-                                    <span>Map</span>
-                                </template>
-                                <i class="fas fa-map"></i>
-                            </a-tooltip>
-                        </span>
-                        <span @click="selected = 3" :class="[classArray ,{ active:selected == 3 }]">
-                            <a-tooltip placement="top" >
-                                <template slot="title">
-                                    <span>List</span>
-                                </template>
-                                <i class="fas fa-bars"></i>
-                            </a-tooltip>
-                        </span>
-                        <span @click="selected = 4" :class="[classArray ,{ active:selected == 4 }]">
-                            <a-tooltip placement="top" >
-                                <template slot="title">
-                                    <span>Project</span>
-                                </template>
-                                <i class="fas fa-university"></i>
-                            </a-tooltip>
-                        </span>
-                    </div>
-                </a-col>
-            </a-row>
-            <a-row class="list-content-render"><grid-list /></a-row>
-        </div>
-    </section>
-</template>
+<template src="./List.html"></template>
+<style src="./List.css" scoped></style>
+
 <script>
+import Widget from '@/components/widget/Widget';
 import Filtered from '@/components/filtered/Filtered';
 import Selected from '@/components/selected/Selected';
 import Breadcrumb from '@/components/breadcrumb/Breadcrumb';
@@ -58,16 +10,20 @@ import GridList from '@/components/lists/Lists';
 
 
 export default {
-    name: 'ListPage',
-    components: { Filtered, Breadcrumb, Selected, GridList },
+    props: { onDone: { type: Function } },
+    components: { Filtered, Breadcrumb, Selected, GridList, Widget },
     data() {
         return {
             selected: 1,
             classArray: ['view-select-item']
         }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.$refs.loading.done()
+        }, 1000)
     }
 }
 </script>
-<style src="./List.css" scoped></style>
 
 
