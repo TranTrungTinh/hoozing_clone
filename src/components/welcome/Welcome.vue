@@ -46,58 +46,28 @@
               </a-input>
             </a-col>
             <a-col :span="5">
-              <a-select defaultValue="lucy" style="width: 100%">
-                <a-select-option value="jack">Jack</a-select-option>
-                <a-select-option value="lucy">Lucy</a-select-option>
-                <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                <a-select-option value="Yiminghe">yiminghe</a-select-option>
-              </a-select>
+              <selected :selects="bedSelect.data" :options="bedSelect.options"/>
             </a-col>
           </a-row>
           <a-row class="mt-30" type="flex" justify="space-between">
             <a-col :span="18">
               <a-row type="flex" justify="space-between">
                 <a-col :span="5">
-                  <a-select defaultValue="lucy" style="width: 100%">
-                    <a-select-option value="jack">Jack</a-select-option>
-                    <a-select-option value="lucy">Lucy</a-select-option>
-                    <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                    <a-select-option value="Yiminghe">yiminghe</a-select-option>
-                  </a-select>
+                  <selected :selects="bedSelect.data" :options="bedSelect.options" />
                 </a-col>
                 <a-col :span="5">
-                  <a-select defaultValue="lucy" style="width: 100%">
-                    <a-select-option value="jack">Jack</a-select-option>
-                    <a-select-option value="lucy">Lucy</a-select-option>
-                    <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                    <a-select-option value="Yiminghe">yiminghe</a-select-option>
-                  </a-select>
+                  <selected :selects="bathSelect.data" :options="bathSelect.options" />
                 </a-col>
                 <a-col :span="5">
-                  <a-select defaultValue="lucy" style="width: 100%">
-                    <a-select-option value="jack">Jack</a-select-option>
-                    <a-select-option value="lucy">Lucy</a-select-option>
-                    <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                    <a-select-option value="Yiminghe">yiminghe</a-select-option>
-                  </a-select>
+                  <selected :selects="minSelect.data" :options="minSelect.options" />
                 </a-col>
                 <a-col :span="5">
-                  <a-select defaultValue="lucy" style="width: 100%">
-                    <a-select-option value="jack">Jack</a-select-option>
-                    <a-select-option value="lucy">Lucy</a-select-option>
-                    <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                    <a-select-option value="Yiminghe">yiminghe</a-select-option>
-                  </a-select>
+                  <selected :selects="maxSelect.data" :options="maxSelect.options" />
                 </a-col>
               </a-row>
             </a-col>
             <a-col :span="5">
-              <a-select defaultValue="lucy" style="width: 100%">
-                <a-select-option value="jack">Jack</a-select-option>
-                <a-select-option value="lucy">Lucy</a-select-option>
-                <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                <a-select-option value="Yiminghe">yiminghe</a-select-option>
-              </a-select>
+              <selected />
             </a-col>
           </a-row>
           <a-row><a-button class="welcome-input-search" size="large">SEARCH</a-button></a-row>
@@ -146,11 +116,12 @@
 </template>
 
 <script>
+import Selected from '@/components/selected/Selected';
 import { VueTyper } from 'vue-typer';
 import CountTo from 'vue-count-to';
 
 export default {
-  components: { VueTyper, CountTo },
+  components: { Selected, VueTyper, CountTo },
   data() {
     return {
       interval: 0,
@@ -165,7 +136,74 @@ export default {
         backgroundSize: 'cover',
         backgroundPosition: 'top'
       },
-      texts: ["HELLO  SAIGON","Furnished House with Amenities","Long-Term Rental Made Easy"]
+      texts: ["HELLO  SAIGON","Furnished House with Amenities","Long-Term Rental Made Easy"],
+      propertySelect: {
+        data: [
+          
+        ]
+      },
+      bedSelect: {
+        data: [
+          {key: 1, value: 1},
+          {key: 2, value: 2},
+          {key: 3, value: 3},
+          {key: 4, value: 4},
+          {key: 5, value: 5},
+          {key: 6, value: 6}
+        ],
+        options: {
+          icon: 'fas fa-bed'
+        }
+      },
+      bathSelect: {
+        data: [
+          {key: 1, value: 1},
+          {key: 2, value: 2},
+          {key: 3, value: 3},
+          {key: 4, value: 4},
+          {key: 5, value: 5},
+          {key: 6, value: 6}
+        ],
+        options: {
+          icon: 'fas fa-bath'
+        }
+      },
+      minSelect: {
+        data: [
+          {key: 400, value: '$450'},
+          {key: 500, value: '$500'},
+          {key: 700, value: '$700'},
+          {key: 800, value: '$800'},
+          {key: 900, value: '$900'},
+          {key: 1000, value: '$1000'},
+          {key: 1500, value: '$1500'},
+          {key: 2000, value: '$2000'},
+          {key: 3000, value: '$3000'},
+          {key: 5000, value: '$5000'},
+          {key: 7500, value: '$7500'},
+        ],
+        options: {
+          text: 'Min'
+        }
+      },
+      maxSelect: {
+        data: [
+          {key: 400, value: '$450'},
+          {key: 500, value: '$500'},
+          {key: 700, value: '$700'},
+          {key: 800, value: '$800'},
+          {key: 900, value: '$900'},
+          {key: 1000, value: '$1000'},
+          {key: 1500, value: '$1500'},
+          {key: 2000, value: '$2000'},
+          {key: 3000, value: '$3000'},
+          {key: 5000, value: '$5000'},
+          {key: 7500, value: '$7500'},
+        ],
+        options: {
+          text: 'Max'
+        }
+      },
     }
   },
   methods: {
