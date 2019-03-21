@@ -1,13 +1,14 @@
 <template>
   <a-list
     itemLayout="vertical"
-    :grid="{ gutter: 16, xs: 1, sm: 2, md: 3, lg: 4, xl: 4, xxl: 4}"
     size="large"
+    :grid="getResponse"
     :pagination="pagination"
     :dataSource="listData"
   >
     <a-list-item slot="renderItem" slot-scope="item" key="item.title">
-      <thumbnail :item="item"/>
+      <thumbnail v-if="renderType === 1" :item="item"/>
+      <thumbnail-list v-if="renderType === 2" :item="item" />
     </a-list-item>
   </a-list>
 </template>
@@ -23,9 +24,13 @@ for (let i = 0; i < 41; i++) {
   })
 }
 import Thumbnail from '@/components/thumbnail/Thumbnail';
+import ThumbnailList from '@/components/thumbnail-list/ThumbnailList';
 
 export default {
-    components: { Thumbnail },
+    components: { Thumbnail, ThumbnailList },
+    props: {
+      renderType: { type: Number, default: 1 }
+    },
     data () {
         return {
             listData,
@@ -39,5 +44,14 @@ export default {
             ],
         }
     },
+    computed: {
+      getResponse() {
+        if(this.renderType === 1) // response grid type
+          return { gutter: 16, xs: 1, sm: 2, md: 3, lg: 4, xl: 4, xxl: 4 }
+        if(this.renderType === 2) // respone list type
+          return { gutter: 16, xs: 1, sm: 1, md: 1, lg: 2, xl: 2, xxl: 2 } 
+        return { gutter: 16, xs: 1, sm: 2, md: 3, lg: 4, xl: 4, xxl: 4 }
+      }
+    }
 }
 </script>

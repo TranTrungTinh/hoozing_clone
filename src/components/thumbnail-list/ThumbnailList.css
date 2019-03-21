@@ -1,0 +1,55 @@
+.thumbnail {
+    /* max-width: 260px; */
+    margin: 10px auto;
+}
+  
+.ant-carousel .custom-slick-arrow {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: #000;
+  background-color: rgba(31,45,61,.11);
+  opacity: 0.3;
+}
+.ant-carousel .custom-slick-arrow:before {
+  display: none;
+}
+.ant-carousel .custom-slick-arrow:hover {
+  color: #fff;
+}
+
+.thumbnail-img-cover img {
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0 auto
+}
+
+.thumbnail-img {
+  position: relative;
+}
+
+.thumbnail-content {
+  padding: 15px 0; 
+}
+
+.thumbnail-tag-price {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  left: 12px;
+  bottom: 45px;
+}
+
+.thumbnail-tag-heart {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
