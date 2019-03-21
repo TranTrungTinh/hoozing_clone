@@ -1,0 +1,33 @@
+.list-content-main {
+    padding: 10px 20px;
+}
+.list-content-main h1 {
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+.list-content-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.view-select {
+    font-size: 16px;
+    margin: 0 0 0 20px;
+    color: #aaa;
+}
+.view-select-item {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.view-select-item:hover {
+    color: #000;
+}
+.active {
+    color: #000;
+}
+
+.list-content-render {
+    margin: 20px 0;
+}

@@ -18,7 +18,9 @@ export default {
               {id: 6},
               {id: 7},
               {id: 8},
-          ]
+          ],
+          selected: 1,
+          classArray: ['feature-tags-item']
       }
   }
 }

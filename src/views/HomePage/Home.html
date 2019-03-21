@@ -33,26 +33,28 @@
         <div class="feature-properties-content">
             <h1>Feature Properties</h1>
             <div class="feature-tags">
-                <div class="feature-tags-item active">All</div>
-                <div class="feature-tags-item">
+                <div @click="selected = 1" :class="[classArray, {active: selected == 1}]">
+                    <span>All</span>
+                </div>
+                <div @click="selected = 2" :class="[classArray, {active: selected == 2}]">
                     <span>DISTRICT 1</span>
                 </div>
-                <div class="feature-tags-item">
+                <div @click="selected = 3" :class="[classArray, {active: selected == 3}]">
                     <span>DISTRICT 2</span>
                 </div>
-                <div class="feature-tags-item">
+                <div @click="selected = 4" :class="[classArray, {active: selected == 4}]">
                     <span>DISTRICT 3</span>
                 </div>
-                <div class="feature-tags-item">
+                <div @click="selected = 5" :class="[classArray, {active: selected == 5}]">
                     <span>DISTRICT 4</span>
                 </div>
-                <div class="feature-tags-item">
+                <div @click="selected = 6" :class="[classArray, {active: selected == 6}]">
                     <span>DISTRICT 5</span>
                 </div>
-                <div class="feature-tags-item">
+                <div @click="selected = 7" :class="[classArray, {active: selected == 7}]">
                     <span>DISTRICT 7</span>
                 </div>
-                <div class="feature-tags-item">
+                <div @click="selected = 8" :class="[classArray, {active: selected == 8}]">
                     <span>BINH THANH</span>
                 </div>
             </div>
