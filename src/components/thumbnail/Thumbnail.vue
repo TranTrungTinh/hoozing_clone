@@ -16,6 +16,9 @@
                 <span class="tag-symbol">$</span>
                 <span class="tag-price">850</span>
             </div>
+            <div v-if="isShowHeart" class="thumbnail-tag-heart" @click="toggleLove">
+                <i :class="showIconLove"></i>
+            </div>
         </div>
         <p class="thumbnail-code">HOUSE CODE 567</p>
         <p class="thumbnail-title">Artistic Elegant 2 Bedroom Apartment In District 2</p>
@@ -46,6 +49,23 @@
 <script>
 export default {
     name: 'Thumbnail',
+    data() {
+        return {
+            isShowHeart: true,
+            isLove: false
+        }
+    },
+    methods: {
+        toggleLove() {
+            this.isLove = !this.isLove;
+        }
+    },
+    computed: {
+        showIconLove() {
+            if(this.isLove) return 'fas fa-heart';
+            return 'far fa-heart';
+        }
+    }
 }
 </script>
 <style src="./Thumbnail.css" scoped></style>

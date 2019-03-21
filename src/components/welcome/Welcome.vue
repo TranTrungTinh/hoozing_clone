@@ -106,11 +106,15 @@
         <div class="welcome-total-count">
           <div class="welcome-total-properties">
             <div class="fs-16">Total Properties</div>
-            <div class="fs-36"><span>25000</span>+</div>
+            <div class="fs-36">
+              <span><count-to :startVal='0' :endVal='25000' :duration='5000'></count-to>+</span>
+            </div>
           </div>
           <div class="welcome-total-users">
             <div class="fs-16">Total Users</div>
-            <div class="fs-36"><span>3000</span>+</div>
+            <div class="fs-36">
+              <span><count-to :startVal='0' :endVal='3000' :duration='5000'></count-to>+</span>
+            </div>
           </div>
         </div>
       </div>
@@ -132,7 +136,7 @@
       </a-col>
       <a-col :span="4" :offset="1">
         <a-row type="flex" justify="space-between">
-          <a-col><i class="fab fa-windows"></i></i></a-col>
+          <a-col><i class="fab fa-windows"></i></a-col>
           <a-col>360 Degree Apartment View</a-col>
         </a-row>
       </a-col>
@@ -143,10 +147,10 @@
 
 <script>
 import { VueTyper } from 'vue-typer';
-import { setInterval, clearInterval } from 'timers';
+import CountTo from 'vue-count-to';
 
 export default {
-  components: { VueTyper },
+  components: { VueTyper, CountTo },
   data() {
     return {
       interval: 0,
