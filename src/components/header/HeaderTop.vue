@@ -6,9 +6,11 @@
             </router-link>
         </div>
         <div class="header-top-navlink">
-            <div class="navlink-item">Rent</div>
             <div class="navlink-item">
-                <router-link to="/lists">
+                <router-link to="/lists">Rent</router-link>
+            </div>
+            <div class="navlink-item">
+                <router-link to="/request">
                     <span class="navlink-item-special">List Your House</span>
                 </router-link>
             </div>

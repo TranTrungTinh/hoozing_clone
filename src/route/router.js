@@ -7,6 +7,7 @@ import Layout from '@/components/layout/Layout';
 // @Main app page
 import HomePage from '@/views/HomePage/Home';
 import ListPage from '@/views/ListPage/List';
+import RequestPage from '@/views/RequestPage/Request';
 
 Vue.use(Router);
 export default new Router({
@@ -26,6 +27,11 @@ export default new Router({
           path: '/lists',
           name: 'ListPage',
           component: ListPage
+        },
+        {
+          path: '/request',
+          name: 'RequestPage',
+          component: RequestPage
         }
       ]
     },
