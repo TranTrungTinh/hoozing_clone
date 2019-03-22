@@ -31,3 +31,13 @@
 .list-content-render {
     margin: 20px 0;
 }
+
+@media only screen and (max-width: 950px) {
+    .list-content-main h1 {
+        font-size: 18px;
+    }
+    .list-content-view {
+        display: none;
+    }
+
+}

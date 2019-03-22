@@ -4,12 +4,12 @@
     <div class="list-content-main">
         <breadcrumb />
         <h1>RENT FULLY FURNISHED APARTMENT, 2 BEDROOM, 3 BEDROOM, HCMC</h1>
-        <a-row class="list-content-view">
+        <a-row :gutter="16" class="list-content-view">
             <a-col :span="4">
                 <span>Show 15 in 207 Listing Sort by</span>
             </a-col>
-            <a-col :span="4"><selected /></a-col>
-            <a-col :span="4">
+            <a-col :span="5"><selected /></a-col>
+            <a-col :span="5">
                 <div class="view-select">
                     <span @click="selected = 1" :class="[classArray ,{ active:selected == 1 }]">
                         <a-tooltip placement="top" >
