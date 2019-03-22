@@ -1,47 +1,49 @@
-<template>
-    <section class="detail-content-page">
-        <div class="detail-bg-cover" :style="[styles]">
-            <a-button type="danger" size="large">VIEW PHOTO</a-button>
-        </div>
-        <div class="container">
-            <div class="detail-main-content">
-                <a-row :gutter="16">
-                    <a-col :span="18">
-                        <breadcrumb />
-                        <div class="detail-tabs-content">
-                            <a-tabs defaultActiveKey="1">
-                                <a-tab-pane tab="Overview" key="1"><overview /></a-tab-pane>
-                                <a-tab-pane tab="Summary" key="2"><summary-tab /></a-tab-pane>
-                                <a-tab-pane tab="Amenities" key="3"><amenities /></a-tab-pane>
-                                <a-tab-pane tab="Facillities" key="4"><overview /></a-tab-pane>
-                            </a-tabs>
-                        </div>
-                    </a-col>
-                    <a-col :span="6"></a-col>
-                </a-row>
-                
-            </div>
-        </div>
-    </section>
-</template>
+<template src="./Detail.html"></template>
+<style src="./Detail.css" scoped></style>
+
 <script>
+import Widget from '@/components/widget/Widget';
 import Breadcrumb from '@/components/breadcrumb/Breadcrumb';
 
 import Overview from '@/components/utils/overview/Overview';
 import SummaryTab from '@/components/utils/summary/Summary';
 import Amenities from '@/components/utils/amenities/Amenities';
+import Facilities from '@/components/utils/facilities/Facilities';
 
 export default {
-    components: { Breadcrumb, Overview, SummaryTab, Amenities },
+    components: { Widget, Breadcrumb, Overview, SummaryTab, Amenities, Facilities },
     data() {
         return {
             styles: {
                 backgroundImage: `url("${require('@/assets/detail-bg.jpeg')}")`, 
+            },
+            rules: {
+                name: [{ required: true, message: 'Please input your name !' }],
+                phone: [{ required: true, message: 'Please input phone number !' }],
+                email: [{ required: true, message: 'Please input your email !' }],
+                messages: [{ required: true, message: 'Please input another messages !' }],
             }
         }
-    }
+    },
+    beforeCreate () {
+        this.form = this.$form.createForm(this);
+    },
+    mounted() {
+        setTimeout(() => {
+            this.$refs.loading.done()
+        }, 1000)
+    },
+    methods: {
+        handleSubmit (e) {
+            e.preventDefault();
+            this.form.validateFields((err, values) => {
+                if (!err) {
+                    console.log('Received values of form: ', values);
+                }
+            });
+        },
+    },
 }
 </script>
-<style src="./Detail.css" scoped></style>
 
 

@@ -1,0 +1,65 @@
+<widget ref="loading">
+    <section class="detail-content-page">
+        <div class="detail-bg-cover" :style="[styles]">
+            <a-button type="danger" size="large">VIEW PHOTO</a-button>
+        </div>
+        <div class="container">
+            <div class="detail-main-content">
+                <a-row :gutter="16">
+                    <a-col :span="18">
+                        <breadcrumb />
+                        <div class="detail-tabs-content">
+                            <a-tabs defaultActiveKey="1">
+                                <a-tab-pane tab="Overview" key="1"><overview /></a-tab-pane>
+                                <a-tab-pane tab="Summary" key="2"><summary-tab /></a-tab-pane>
+                                <a-tab-pane tab="Amenities" key="3"><amenities /></a-tab-pane>
+                                <a-tab-pane tab="Facillities" key="4"><facilities /></a-tab-pane>
+                            </a-tabs>
+                        </div>
+                    </a-col>
+                    <a-col :span="6">
+                        <div class="detail-request-form">
+                            <div class="detail-main-price">
+                                <span class="price">$500</span>
+                                <span>per month</span>
+                            </div>
+                            <div class="detail-popular-tag">
+                                <span class="popular-tag">
+                                    <span>POPULAR</span>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="eye-tag">
+                                    <i class="fal fa-eye"></i>
+                                    <span>2</span>
+                                    <span>view</span>
+                                </span>
+                            </div>
+                            <a-form :form="form" @submit="handleSubmit">
+                                <a-form-item>
+                                    <a-input v-decorator="['name', { rules: rules.name}]" placeholder="YOUR NAME"/>
+                                </a-form-item>
+                                <a-form-item>
+                                    <a-input type="number" v-decorator="['phone', { rules: rules.phone}]" placeholder="YOUR PHONE NUMBER">
+                                        <a-select slot="addonBefore" defaultValue="vn" style="width: 90px">
+                                            <a-select-option value="vn">+84</a-select-option>
+                                            <a-select-option value="en">09</a-select-option>
+                                        </a-select>
+                                    </a-input>
+                                </a-form-item>
+                                <a-form-item>
+                                    <a-input v-decorator="['email', { rules: rules.email}]" placeholder="EMAIL"/>
+                                </a-form-item>
+                                <a-form-item>
+                                    <a-textarea v-decorator="['messages', { rules: rules.messages}]" :autosize="{ minRows: 3, maxRows: 6 }" placeholder="MESSAGES"/>
+                                </a-form-item>
+    
+                                <a-button class="request-content-button" size="large" html-type="submit">REQUEST</a-button>
+                            </a-form>
+                        </div>
+                    </a-col>
+                </a-row>
+                
+            </div>
+        </div>
+    </section>
+</widget>

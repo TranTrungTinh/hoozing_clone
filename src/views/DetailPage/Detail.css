@@ -16,4 +16,58 @@
 
 .detail-tabs-content {
     margin: 20px 0 0 0;
+    min-height: 500px;
+}
+
+.detail-request-form {
+    margin: 20px 0 0 0;
+    padding: 30px 20px;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+.detail-main-price {
+    margin: 10px 0;
+}
+.price {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0 5px;
+}
+.detail-popular-tag {
+    margin: 10px 0 30px 0;
+}
+.popular-tag {
+    padding: 3px 5px;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    background: #2378a7;
+    color: #fff;
+}
+.popular-tag span {
+    padding: 0 10px 0 0;
+}
+
+.eye-tag {
+    margin: 10px;
+}
+.eye-tag i {
+    padding: 3px
+} 
+.eye-tag span {
+    padding: 2px;
+}
+
+.request-content-button,
+.request-content-button:active {
+    margin: 10px 0 0 0;
+    background: #e25e66;
+    color: #fff;
+    border: none;
+    /* width: 120px; */
+}
+.request-content-button:hover {
+    background: #ea898f;
+    color: #fff;
+    border: none;
 }

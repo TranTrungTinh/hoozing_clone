@@ -7,28 +7,28 @@ import Welcome from '@/components/welcome/Welcome';
 import Thumbnail from '@/components/thumbnail/Thumbnail';
 
 export default {
-  components: { Thumbnail, Welcome, Widget },
-  data() {
-      return {
-          listItem: [
-              {id: 1},
-              {id: 2},
-              {id: 3},
-              {id: 4},
-              {id: 5},
-              {id: 6},
-              {id: 7},
-              {id: 8},
-          ],
-          selected: 1,
-          classArray: ['feature-tags-item']
-      }
-  },
-  mounted() {
-    setTimeout(() => {
-        this.$refs.loading.done()
-    }, 1000)
-}
+    components: { Thumbnail, Welcome, Widget },
+    data() {
+        return {
+            listItem: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6},
+                {id: 7},
+                {id: 8},
+            ],
+            selected: 1,
+            classArray: ['feature-tags-item']
+        }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.$refs.loading.done()
+        }, 1000)
+    }
 }
 </script>
 
