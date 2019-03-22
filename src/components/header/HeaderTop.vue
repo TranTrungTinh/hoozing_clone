@@ -1,55 +1,107 @@
 <template>
-    <div class="header-top">
-        <div class="header-top-logo">
-            <router-link to="/">
-                <img src="@/assets/skg-logo.png" alt="Brand Logo" />
-            </router-link>
-        </div>
-        <div class="header-top-navlink">
-            <div class="navlink-item">
-                <router-link to="/lists">Rent</router-link>
-            </div>
-            <div class="navlink-item">
-                <router-link to="/request">
-                    <span class="navlink-item-special">List Your House</span>
+    <header>
+        <div class="header-top">
+            <div class="header-top-logo">
+                <router-link to="/">
+                    <img src="@/assets/skg-logo.png" alt="Brand Logo" />
                 </router-link>
             </div>
-            <div class="navlink-item">Careers</div>
-            <div class="navlink-item">Blog</div>
+            <div class="header-top-navlink">
+                <div class="navlink-item">
+                    <router-link to="/lists">Rent</router-link>
+                </div>
+                <div class="navlink-item">
+                    <router-link to="/request">
+                        <span class="navlink-item-special">List Your House</span>
+                    </router-link>
+                </div>
+                <div class="navlink-item">Careers</div>
+                <div class="navlink-item">Blog</div>
+            </div>
+            <div class="header-top-search">
+                <a-input-search
+                    placeholder="What do you want ?"
+                    class="top-search"
+                    @search="onSearch"
+                />
+            </div>
+            <div class="header-top-language">
+                <a-select defaultValue="vn" class="top-selected" @change="handleChange">
+                    <a-select-option value="vn">
+                        <img src="https://img.icons8.com/color/24/000000/vietnam.png"/>
+                        <span style="padding-left: 10px">Vietnamese</span>
+                    </a-select-option>
+                    <a-select-option value="en" class="top-selected-item">
+                        <img src="https://img.icons8.com/color/24/000000/great-britain.png"/>
+                        <span style="padding-left: 10px">English</span>
+                    </a-select-option>
+                </a-select>
+            </div>
+            <div class="header-top-account">
+                <a-avatar class="top-account" icon="user" />
+            </div>
         </div>
-        <div class="header-top-search">
-            <a-input-search
-                placeholder="What do you want ?"
-                class="top-search"
-                @search="onSearch"
-            />
+        <div class="header-responsive-wrapper">
+            <div class="header-responsive">
+                <span @click="showDrawer"><i class="fal fa-bars"></i></span>
+                <div class="header-top-logo">
+                    <router-link to="/">
+                        <img src="@/assets/skg-logo.png" alt="Brand Logo" />
+                    </router-link>
+                </div>
+                <span @click="toggleFilter"><i class="fal fa-search"></i></span>
+            </div>
+            <div class="header-responsive-filter" v-if="isFiltered">
+                <a-row>
+                    <a-col :xs="24">
+                        <a-input placeholder="What do you want ?">
+                            <a-icon slot="addonAfter" type="environment"/>
+                        </a-input>
+                    </a-col>
+                    <a-col :xs="24">
+                        <selected />
+                    </a-col>
+                    <a-col :xs="24">
+                        <selected />
+                    </a-col>
+                    <a-col :xs="24">
+                        <selected />
+                    </a-col>
+                    <a-col :xs="24">
+                        <selected />
+                    </a-col>
+                    <a-col :xs="24">
+                        <selected />
+                    </a-col>
+                    <a-col><a-button class="header-responsive-search" size="large">SEARCH</a-button></a-col>
+                </a-row>
+            </div>
+            <div>
+                <drawer ref="drawer"/>
+            </div>
         </div>
-        <div class="header-top-language">
-            <a-select defaultValue="vn" class="top-selected" @change="handleChange">
-                <a-select-option value="vn">
-                    <img src="https://img.icons8.com/color/24/000000/vietnam.png"/>
-                    <span style="padding-left: 10px">Vietnamese</span>
-                </a-select-option>
-                <a-select-option value="en" class="top-selected-item">
-                    <img src="https://img.icons8.com/color/24/000000/great-britain.png"/>
-                    <span style="padding-left: 10px">English</span>
-                </a-select-option>
-            </a-select>
-        </div>
-        <div class="header-top-account">
-            <a-avatar class="top-account" icon="user" />
-        </div>
-    </div>
+    </header>
 </template>
 
 <script>
-export default {
-    methods: {
-        onSearch (value) {
-            console.log(value)
-        },
-        handleChange(value) {
+import Drawer from '@/components/header/Drawer';
+import Selected from '@/components/selected/Selected';
 
+export default {
+    components: { Drawer, Selected },
+    data() {
+        return {
+            isFiltered: false
+        }
+    },
+    methods: {
+        onSearch (value) {},
+        handleChange(value) {},
+        showDrawer() {
+            this.$refs.drawer.open();
+        },
+        toggleFilter() {
+            this.isFiltered = !this.isFiltered;
         }
     }
 }

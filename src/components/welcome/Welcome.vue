@@ -2,8 +2,8 @@
 <div>
 
   <div class="welcome-main" :style="[styles]">
-    <div class="welcome-main-center">
-      <div class="container">
+    <div class="container">
+      <div class="welcome-main-center">
         <div class="welcome-main-title">
           <vue-typer
             :text="texts"
@@ -39,7 +39,7 @@
         </div>
 
         <div class="welcome-content-input">
-          <a-row type="flex" justify="space-between">
+          <a-row class="welcome-pre-filtered" type="flex" justify="space-between">
             <a-col :span="18">
               <a-input placeholder="What do you want ?">
                 <a-icon slot="addonAfter" type="environment"/>
@@ -49,7 +49,7 @@
               <selected :selects="bedSelect.data" :options="bedSelect.options"/>
             </a-col>
           </a-row>
-          <a-row class="mt-30" type="flex" justify="space-between">
+          <a-row class="welcome-sub-filtered" type="flex" justify="space-between">
             <a-col :span="18">
               <a-row type="flex" justify="space-between">
                 <a-col :span="5">
@@ -131,10 +131,7 @@ export default {
         `url("${require('@/assets/home2.jpg')}")`
       ],
       styles: {
-        height: '90vh',
         backgroundImage: `url("${require('@/assets/home.png')}")`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top'
       },
       texts: ["HELLO  SAIGON","Furnished House with Amenities","Long-Term Rental Made Easy"],
       propertySelect: {

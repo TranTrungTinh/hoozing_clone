@@ -1,7 +1,12 @@
+.header-responsive-wrapper {
+    display: none;
+}
 .header-top {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0 5%;
+    height: 64px;
 }
 
 .header-top-logo img {
@@ -51,4 +56,78 @@
 }
 .header-top-account .top-account {
     font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-top {
+        padding: 0 2%;
+    }
+
+    .header-top-logo img {
+        width: 100px;
+    }
+
+    .navlink-item {
+        font-size: 14px;
+        margin: 0 6px;
+    }
+    .top-search {
+        width: 250px;
+    }
+    .top-selected {
+        width: 120px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header-top {
+        padding: 0 .5%;
+    }
+
+    .header-top-logo img {
+        width: 80px;
+    }
+
+    .navlink-item {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+    .top-search {
+        width: 220px;
+    }
+    .top-selected {
+        width: 100px;
+        font-size: 14px;
+    }
+    .top-account {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .header-top {
+        display: none;
+    }
+    .header-responsive-wrapper { display: block }
+    .header-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header-responsive-filter {
+        padding: 10px 80px;
+    }
+    .header-top-logo img {
+        width: 150px;
+    }
+    .header-responsive span {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header-responsive-filter {
+        padding: 10px 20px;
+    }
 }
