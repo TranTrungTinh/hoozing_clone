@@ -8,6 +8,7 @@ import Layout from '@/components/layout/Layout';
 import HomePage from '@/views/HomePage/Home';
 import ListPage from '@/views/ListPage/List';
 import RequestPage from '@/views/RequestPage/Request';
+import DetailPage from '@/views/DetailPage/Detail';
 
 Vue.use(Router);
 export default new Router({
@@ -32,6 +33,11 @@ export default new Router({
           path: '/request',
           name: 'RequestPage',
           component: RequestPage
+        },
+        {
+          path: '/detail',
+          name: 'DetailPage',
+          component: DetailPage
         }
       ]
     },

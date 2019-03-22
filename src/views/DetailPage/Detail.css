@@ -1,0 +1,19 @@
+.detail-bg-cover {
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.detail-main-content {
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+.detail-tabs-content {
+    margin: 20px 0 0 0;
+}

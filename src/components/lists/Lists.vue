@@ -7,8 +7,10 @@
     :dataSource="listData"
   >
     <a-list-item slot="renderItem" slot-scope="item" key="item.title">
-      <thumbnail v-if="renderType === 1" :item="item"/>
-      <thumbnail-list v-if="renderType === 2" :item="item" />
+      <router-link to="/detail" tag="span" style="cursor: pointer">
+        <thumbnail v-if="renderType === 1" :item="item"/>
+        <thumbnail-list v-if="renderType === 2" :item="item" />
+      </router-link>
     </a-list-item>
   </a-list>
 </template>
@@ -37,11 +39,6 @@ export default {
             pagination: {
                 pageSize: 12,
             },
-            actions: [
-                { type: 'star-o', text: '156' },
-                { type: 'like-o', text: '156' },
-                { type: 'message', text: '2' },
-            ],
         }
     },
     computed: {

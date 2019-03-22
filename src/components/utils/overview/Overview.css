@@ -1,0 +1,9 @@
+.overview {
+    padding: 10px;
+}
+
+.overview-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
