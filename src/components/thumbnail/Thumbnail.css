@@ -1,5 +1,5 @@
 .thumbnail {
-    max-width: 260px;
+    max-width: 340px;
     margin: 10px auto;
 }
   
@@ -19,8 +19,8 @@
 }
 
 .thumbnail-img-cover img {
-  max-width: 260px;
-  max-height: 180px;
+  max-width: 340px;
+  /* max-height: 180px; */
   height: auto;
   display: block;
   margin: 0 auto
@@ -39,7 +39,7 @@
   width: 60px;
   text-align: center;
   left: -2px;
-  top: 145px;
+  bottom: 50px;
 }
 
 .thumbnail-tag-heart {

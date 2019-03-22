@@ -92,20 +92,20 @@
   </div>
   <div class="welcome-sub-content">
     <a-row type="flex" justify="center">
-      <a-col :span="2">
-        <a-row type="flex" justify="space-between">
+      <a-col :span="3">
+        <a-row type="flex" justify="space-around">
           <a-col><i class="fas fa-trophy"></i></a-col>
           <a-col>Verified Listing</a-col>
         </a-row>
       </a-col>
-      <a-col :span="3" :offset="1">
-        <a-row type="flex" justify="space-between">
+      <a-col :span="4" :offset="1">
+        <a-row type="flex" justify="space-around">
           <a-col><i class="fas fa-language"></i></a-col>
           <a-col>Mutilanguage Support</a-col>
         </a-row>
       </a-col>
       <a-col :span="4" :offset="1">
-        <a-row type="flex" justify="space-between">
+        <a-row type="flex" justify="space-around">
           <a-col><i class="fab fa-windows"></i></a-col>
           <a-col>360 Degree Apartment View</a-col>
         </a-row>

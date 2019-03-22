@@ -9,7 +9,6 @@
 </template>
 <script>
 export default {
-    name: 'Switch',
     props: {
         title: { type: String, default: '' }
     },
