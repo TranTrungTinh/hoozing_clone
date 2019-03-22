@@ -5,9 +5,11 @@
 import Widget from '@/components/widget/Widget';
 import Welcome from '@/components/welcome/Welcome';
 import Thumbnail from '@/components/thumbnail/Thumbnail';
+import Selected from '@/components/selected/Selected';
+import { Carousel, Slide } from 'vue-carousel';
 
 export default {
-    components: { Thumbnail, Welcome, Widget },
+    components: { Thumbnail, Welcome, Widget, Selected, Carousel, Slide },
     data() {
         return {
             listItem: [

@@ -1,4 +1,12 @@
+.renting-list-content-responsive,
+.feature-tags-responsive {
+    display: none;
+}
+
 /* Hassle free */
+.renting-content {
+    margin: 50px 0 0 0;
+}
 .renting-content h1 {
     text-align: center;
     font-size: 36px;
@@ -16,6 +24,9 @@
     font-size: 36px;
     color: #aaa;
     font-weight: 300;
+}
+.renting-item {
+    text-align: center;
 }
 .renting-item i {
     font-size: 48px;
@@ -74,4 +85,32 @@
     display: flex;
     justify-content: center;
     margin: 30px 0 0 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .renting-list-content,
+    .feature-tags {
+        display: none;
+    }
+    .renting-list-content-responsive,
+    .feature-tags-responsive {
+        display: block;
+    }
+    .feature-properties-content h1 {
+        margin-bottom: 20px; 
+    }
+    .feature-tags-responsive {
+        padding: 0px 30px;
+    }
+    .ant-carousel >>> .slick-slide {
+        text-align: center;
+        height: 160px;
+        line-height: 160px;
+        /* background: #364d79; */
+        overflow: hidden;
+    }
+    
+    .ant-carousel >>> .slick-slide  div {
+        color: #000;
+    }
 }
