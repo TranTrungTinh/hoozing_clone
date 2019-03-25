@@ -1,9 +1,11 @@
 $mobile: 500px;
-$tablet-width: 768px;
+$tablet-width: 750px;
 $tablet-big: 850px;
 $tablet-large: 950px;
 
-$desktop-width: 1024px;
+$desktop-width: 1000px;
+$desktop-big: 1200px;
+
 @mixin mobile {
     @media (max-width: #{$mobile}) {
         @content;
@@ -30,6 +32,12 @@ $desktop-width: 1024px;
 
 @mixin desktop {
     @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-big {
+    @media (min-width: #{$desktop-big}) {
         @content;
     }
 }

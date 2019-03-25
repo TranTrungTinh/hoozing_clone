@@ -1,3 +1,5 @@
+@import '@/styles/app.scss';
+
 .header-responsive-wrapper {
     display: none;
 }
@@ -8,10 +10,34 @@
     padding: 0 5%;
     height: 64px;
 
+    @include desktop-big {
+        padding: 0 1%;
+    }
+
+    @include desktop {
+        padding: 0 .5%;
+    }
+
+    @include tablet-large {
+        display: none;
+    }
+
     &-logo img{
         width: 150px;
         height: auto;
         cursor: pointer;
+
+        @include desktop-big {
+            width: 100px;
+        }
+
+        @include desktop {
+            width: 80px;
+        }
+    
+        @include tablet-large {
+            display: none;
+        }
     }
 
     &-navlink {
@@ -20,11 +46,23 @@
         justify-content: space-around;
         align-items: center;
 
+        
+
         .navlink-item {
             margin: 0 15px;
             font-size: 16px;
             font-weight: 500;
             cursor: pointer;
+
+            @include desktop-big {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+    
+            @include desktop {
+                margin: 0 4px;
+                font-size: 14px;
+            }
         }
         .navlink-item-special {
             display: inline-block;
@@ -40,6 +78,14 @@
     &-search {
         .top-search {
             width: 300px;
+
+            @include desktop-big {
+                width: 250px;
+            }
+    
+            @include desktop {
+                width: 220px;
+            }
         }
     }
 
