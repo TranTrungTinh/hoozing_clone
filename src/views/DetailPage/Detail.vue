@@ -1,5 +1,5 @@
 <template src="./Detail.html"></template>
-<style src="./Detail.css" scoped></style>
+<style src="./Detail.scss" lang="scss" scoped></style>
 
 <script>
 import Widget from '@/components/widget/Widget';

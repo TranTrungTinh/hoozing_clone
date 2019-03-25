@@ -68,7 +68,7 @@ export default {
     }
 }
 </script>
-<style src="./Thumbnail.css" scoped></style>
+<style src="./Thumbnail.scss" lang="scss" scoped></style>
 
 
 

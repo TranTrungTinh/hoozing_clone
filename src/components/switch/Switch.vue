@@ -19,7 +19,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .switch-item {
     margin: 10px 0;
 }

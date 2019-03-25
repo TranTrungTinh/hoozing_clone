@@ -74,7 +74,7 @@ export default {
     }
 }
 </script>
-<style src="./ThumbnailList.css" scoped></style>
+<style src="./ThumbnailList.scss" lang="scss" scoped></style>
 
 
 

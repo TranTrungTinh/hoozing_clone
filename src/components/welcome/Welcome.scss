@@ -1,0 +1,179 @@
+@import '@/styles/app.scss';
+
+.welcome {
+  &-main {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    height: 90vh;
+
+    @include tablet-large {
+      height: 80vh;
+    }
+
+    @include tablet-big {
+      height: 70vh;
+    }
+
+    @include tablet {
+      height: 60vh;
+    }
+  }
+
+  &-main-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 900px;
+
+    @include tablet-large {
+      width: 800px;
+    }
+
+    @include tablet-big {
+      width: 700px;
+    }
+
+    @include tablet {
+      width: 500px;
+    }
+
+    @include mobile {
+      width: 350px;
+    }
+  }
+
+  &-main-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+
+    @include tablet-large {
+      font-size: 42px;
+    }
+
+    @include tablet-big {
+      font-size: 36px;
+    }
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  &-popular-tag {
+    font-size: 16px;
+    color: #fff;
+
+    .popular-tag-item {
+      padding: 5px 15px;
+      cursor: pointer;
+
+      @include tablet {
+        padding: 5px 10px;
+      }
+    }
+
+    @include tablet-big {
+      font-size: 14px;
+    }
+
+  }
+
+  &-sub-filtered {
+    margin: 30px 0 0 0;
+    @include tablet-big {
+      display: none;
+    }
+  }
+
+  &-content-input {
+    margin: 20px 0 0 0;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-input-search {
+    margin: 30px 0 0 0;
+    background: #e25e66;
+    color: #fff;
+    border: none;
+    width: 120px;
+
+    &:hover {
+      background: #ea898f;
+      color: #fff;
+      border: none;
+    }
+  }
+
+  &-total-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+
+  &-total-properties,
+  &-total-users {
+    width: 200px;
+    padding: 5px;
+    background: rgba(0,0,0,.1);
+    color: #fff;
+
+  }
+  
+  &-total-properties {
+    border-right: solid 0.5px #fff;
+
+    &-span {
+      @include tablet-large {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-total-users {
+    border-left: solid 0.5px #fff;
+    &-span {
+      @include tablet-large {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-sub-content {
+    background: #f3f3f3;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-bottom: 50px;
+    display: none;
+
+    @include tablet-large {
+      font-size: 28px;
+    }
+  }
+}
+.vue-typer {
+  & >>> .custom.char.typed,
+  & >>> .custom.char.selected {
+    color: #fff;
+  }
+}
+
+/* Extend class */
+.border-bt {
+  border-bottom: solid 1px #fff;
+}
+.mt-30 {
+  margin-top: 30px 
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-36 {
+  font-size: 36px
+}

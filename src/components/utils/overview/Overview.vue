@@ -39,6 +39,6 @@ export default {
     }
 }
 </script>
-<style src="./Overview.css" scoped></style>
+<style src="./Overview.scss" lang="scss" scoped></style>
 
 

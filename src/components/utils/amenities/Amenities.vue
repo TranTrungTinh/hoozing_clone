@@ -41,7 +41,7 @@ export default {
     }
 }
 </script>
-<style src="./Amenities.css" scoped></style>
+<style src="./Amenities.scss" lang="scss" scoped></style>
 
 
 

@@ -1,5 +1,5 @@
 <template src="./List.html"></template>
-<style src="./List.css" scoped></style>
+<style src="./List.scss" lang="scss" scoped></style>
 
 <script>
 import Widget from '@/components/widget/Widget';

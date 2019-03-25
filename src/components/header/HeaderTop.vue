@@ -103,6 +103,6 @@ export default {
     }
 }
 </script>
-<style src="./HeaderTop.css" scoped></style>
+<style src="./HeaderTop.scss" lang="scss" scoped></style>
 
 

@@ -1,0 +1,143 @@
+.header-responsive-wrapper {
+    display: none;
+}
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 5%;
+    height: 64px;
+
+    &-logo img{
+        width: 150px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    &-navlink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .navlink-item {
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .navlink-item-special {
+            display: inline-block;
+            background-color: #2aadf3;
+            padding: 0 10px;
+            color: #fff;
+            border-radius: 20px;
+            height: 35px;
+            line-height: 35px;
+        }
+    }
+
+    &-search {
+        .top-search {
+            width: 300px;
+        }
+    }
+
+    &-language {
+        .top-selected {
+            width: 160px;
+        }
+    }
+
+    &-account {
+        cursor: pointer;
+
+        .top-account {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-top {
+        padding: 0 1%;
+
+        &-logo img {
+            width: 100px;
+        }
+
+        .navlink-item {
+            font-size: 14px;
+            margin: 0 6px;
+        }
+
+        .top-search {
+            width: 250px;
+        }
+
+        .top-selected {
+            width: 140px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header-top {
+        padding: 0 .5%;
+
+        &-logo img {
+            width: 80px;
+        }
+
+        .navlink-item {
+            font-size: 14px;
+            margin: 0 4px;
+        }
+    }
+    .top {
+        &-search {
+            width: 220px;
+        }
+        &-selected {
+            width: 100px;
+            font-size: 14px;
+        }
+        &-account {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .header-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &-wrapper {
+            display: block
+        }
+
+        &-filter {
+            padding: 10px 80px;
+        }
+
+        & span {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+    .header-top {
+        display: none;
+
+        &-logo img {
+            width: 150px;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header-responsive-filter {
+        padding: 10px 20px;
+    }
+}

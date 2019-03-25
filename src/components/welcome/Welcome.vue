@@ -219,6 +219,6 @@ export default {
   }
 }
 </script>
-<style src="./Welcome.css" scoped></style>
+<style src="./Welcome.scss" lang="scss" scoped></style>
 
 

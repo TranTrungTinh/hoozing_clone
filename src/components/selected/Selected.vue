@@ -21,7 +21,7 @@ export default {
     }
 }
 </script>
-<style src="./Selected.css" scoped></style>
+<style src="./Selected.scss" lang="scss" scoped></style>
 
 
 

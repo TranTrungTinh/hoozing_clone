@@ -8,6 +8,6 @@
 export default {
 }
 </script>
-<style src="./Summary.css" scoped></style>
+<style src="./Summary.scss" lang="scss" scoped></style>
 
 

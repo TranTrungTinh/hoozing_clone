@@ -1,5 +1,5 @@
 <template>
-    <a-select defaultValue="en" class="top-selected" @change="handleChange">
+    <a-select defaultValue="en" class="top-selected">
         <a-select-option value="vn" class="top-selected-item">
             <img src="https://img.icons8.com/color/24/000000/vietnam.png"/>
             <span style="padding-left: 10px">Vietnamese</span>
@@ -15,7 +15,7 @@ export default {
     name: 'Language'
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .top-selected {
    width: 160px;
 }

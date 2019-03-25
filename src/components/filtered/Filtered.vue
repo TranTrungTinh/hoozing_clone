@@ -74,6 +74,6 @@ export default {
     }
 }
 </script>
-<style src="./Filtered.css" scoped></style>
+<style src="./Filtered.scss" lang="scss" scoped></style>
 
 

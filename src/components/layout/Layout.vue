@@ -21,6 +21,6 @@ export default {
 }
 </script>
 
-<style src="./Layout.css" scoped></style>
+<style src="./Layout.scss" lang="scss" scoped></style>
 
 

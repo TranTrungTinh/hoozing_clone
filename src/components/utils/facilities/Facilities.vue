@@ -35,7 +35,7 @@ export default {
     }
 }
 </script>
-<style src="./Facilities.css" scoped></style>
+<style src="./Facilities.scss" lang="scss" scoped></style>
 
 
 
