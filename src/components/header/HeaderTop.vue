@@ -26,16 +26,7 @@
                 />
             </div>
             <div class="header-top-language">
-                <a-select defaultValue="vn" class="top-selected" @change="handleChange">
-                    <a-select-option value="vn">
-                        <img src="https://img.icons8.com/color/24/000000/vietnam.png"/>
-                        <span style="padding-left: 10px">Vietnamese</span>
-                    </a-select-option>
-                    <a-select-option value="en" class="top-selected-item">
-                        <img src="https://img.icons8.com/color/24/000000/great-britain.png"/>
-                        <span style="padding-left: 10px">English</span>
-                    </a-select-option>
-                </a-select>
+                <language />
             </div>
             <div class="header-top-account">
                 <a-avatar class="top-account" icon="user" />
@@ -77,7 +68,7 @@
                 </a-row>
             </div>
             <div>
-                <drawer ref="drawer"/>
+                <drawer ref="drawer" :navLinks="navLinks" />
             </div>
         </div>
     </header>
@@ -85,13 +76,19 @@
 
 <script>
 import Drawer from '@/components/header/Drawer';
+import Language from '@/components/header/Language';
 import Selected from '@/components/selected/Selected';
 
+
 export default {
-    components: { Drawer, Selected },
+    components: { Drawer, Selected, Language },
     data() {
         return {
-            isFiltered: false
+            isFiltered: false,
+            navLinks: [
+                {link: '/lists', title: 'Rent'},
+                {link: '/request', title: 'List Your House'},
+            ]
         }
     },
     methods: {

@@ -45,11 +45,7 @@
     width: 160px;
 }
 
-.top-selected-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .header-top-account {
     cursor: pointer;
