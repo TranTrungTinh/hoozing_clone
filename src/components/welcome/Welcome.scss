@@ -123,24 +123,29 @@
     padding: 5px;
     background: rgba(0,0,0,.1);
     color: #fff;
-
+    
+    @include tablet-large {
+      width: 170px;
+    }
   }
   
   &-total-properties {
     border-right: solid 0.5px #fff;
 
-    &-span {
+    & span {
+      font-size: 36px;
       @include tablet-large {
-        font-size: 24px;
+        font-size: 28px;
       }
     }
   }
 
   &-total-users {
     border-left: solid 0.5px #fff;
-    &-span {
+    & span {
+      font-size: 36px;
       @include tablet-large {
-        font-size: 24px;
+        font-size: 28px;
       }
     }
   }

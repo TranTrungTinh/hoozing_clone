@@ -76,13 +76,13 @@
         <div class="welcome-total-count">
           <div class="welcome-total-properties">
             <div class="fs-16">Total Properties</div>
-            <div class="fs-36">
+            <div>
               <span><count-to :startVal='0' :endVal='25000' :duration='5000'></count-to>+</span>
             </div>
           </div>
           <div class="welcome-total-users">
             <div class="fs-16">Total Users</div>
-            <div class="fs-36">
+            <div>
               <span><count-to :startVal='0' :endVal='3000' :duration='5000'></count-to>+</span>
             </div>
           </div>

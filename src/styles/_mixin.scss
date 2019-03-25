@@ -31,13 +31,13 @@ $desktop-big: 1200px;
 }
 
 @mixin desktop {
-    @media (min-width: #{$desktop-width}) {
+    @media (max-width: #{$desktop-width}) {
         @content;
     }
 }
 
 @mixin desktop-big {
-    @media (min-width: #{$desktop-big}) {
+    @media (max-width: #{$desktop-big}) {
         @content;
     }
 }
