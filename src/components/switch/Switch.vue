@@ -22,9 +22,10 @@ export default {
 <style lang="scss" scoped>
 .switch-item {
     margin: 10px 0;
-}
-.switch-item span {
-    padding-left: 15px;
+
+    & span {
+        padding-left: 15px;
+    }
 }
 </style>
 

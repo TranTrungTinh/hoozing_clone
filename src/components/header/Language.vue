@@ -18,12 +18,12 @@ export default {
 <style lang="scss" scoped>
 .top-selected {
    width: 160px;
-}
 
-.top-selected-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+   }
 }
 </style>
 

@@ -3,14 +3,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    & span:last-child {
+        padding-left: 10px;
+    }
 }
 
-.selected-item span:last-child {
-    padding-left: 10px;
-}
-.ant-select-selection-selected-value i {
-    padding-right: 10px;
-}
-.ant-select-selection-selected-value span {
-    padding-right: 5px;
+.ant-select-selection-selected-value {
+    & i {
+        padding-right: 10px;
+    }
+
+    & span {
+        padding-right: 5px;
+    }
 }

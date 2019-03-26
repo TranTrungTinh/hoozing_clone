@@ -1,43 +1,49 @@
-.list-content-main {
-    padding: 10px 20px;
-}
-.list-content-main h1 {
-    margin: 15px 0;
-    font-size: 28px;
+@import '@/styles/app.scss';
+
+.list-content {
+
+    &-main {
+        padding: 10px 20px;
+        & h1 {
+            margin: 15px 0;
+            font-size: 28px;
+
+            @include tablet {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &-view {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &-render {
+        margin: 20px 0;
+    }
 }
 
-.list-content-view {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
 .view-select {
     font-size: 16px;
     margin: 0 0 0 20px;
     color: #aaa;
-}
-.view-select-item {
-    margin: 0 10px;
-    cursor: pointer;
-}
-.view-select-item:hover {
-    color: #000;
+
+    &-item {
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: #000;
+        }
+    }
 }
 .active {
     color: #000;
-}
-
-.list-content-render {
-    margin: 20px 0;
-}
-
-@media only screen and (max-width: 950px) {
-    .list-content-main h1 {
-        font-size: 18px;
-    }
-    .list-content-view {
-        display: none;
-    }
-
 }

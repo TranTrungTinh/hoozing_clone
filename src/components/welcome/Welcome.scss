@@ -162,10 +162,15 @@
     }
   }
 }
+
 .vue-typer {
-  & >>> .custom.char.typed,
-  & >>> .custom.char.selected {
+  .char.custom {
     color: #fff;
+    
+    &.typed {
+      display: inline-block;
+      color: #fff;
+    }
   }
 }
 
