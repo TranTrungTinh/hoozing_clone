@@ -22,7 +22,7 @@
     </div>
 </template>
 <script>
-import { InfoIcon } from '@/components/info-icon/Info-icon';
+import { InfoIcon } from '@/components/info-icon';
 export default {
     components: { InfoIcon },
     data() {
