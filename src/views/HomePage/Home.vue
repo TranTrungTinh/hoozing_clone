@@ -2,10 +2,10 @@
 <style src="./Home.scss" lang="scss" scoped></style>
 
 <script>
-import Widget from '@/components/widget/Widget';
+import { Widget } from '@/components/widget';
 import Welcome from '@/components/welcome/Welcome';
-import Thumbnail from '@/components/thumbnail/Thumbnail';
-import Selected from '@/components/selected/Selected';
+import { Thumbnail } from '@/components/thumbnail';
+import { Selected } from '@/components/selected';
 import { Carousel, Slide } from 'vue-carousel';
 
 export default {

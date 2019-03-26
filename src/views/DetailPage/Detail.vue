@@ -2,8 +2,8 @@
 <style src="./Detail.scss" lang="scss" scoped></style>
 
 <script>
-import Widget from '@/components/widget/Widget';
-import Breadcrumb from '@/components/breadcrumb/Breadcrumb';
+import { Widget } from '@/components/widget';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 import Overview from '@/components/utils/overview/Overview';
 import SummaryTab from '@/components/utils/summary/Summary';

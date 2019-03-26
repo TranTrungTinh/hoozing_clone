@@ -2,10 +2,10 @@
 <style src="./List.scss" lang="scss" scoped></style>
 
 <script>
-import Widget from '@/components/widget/Widget';
-import Filtered from '@/components/filtered/Filtered';
-import Selected from '@/components/selected/Selected';
-import Breadcrumb from '@/components/breadcrumb/Breadcrumb';
+import { Widget } from '@/components/widget';
+import { Filtered } from '@/components/filtered';
+import { Selected } from '@/components/selected';
+import { Breadcrumb } from '@/components/breadcrumb';
 import GridList from '@/components/lists/Lists';
 
 

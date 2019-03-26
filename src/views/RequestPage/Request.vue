@@ -2,7 +2,7 @@
 <style src="./Request.scss" lang="scss" scoped></style>
 
 <script>
-import Widget from '@/components/widget/Widget';
+import { Widget } from '@/components/widget';
 
 export default {
     components: { Widget },

@@ -9,9 +9,9 @@
     </div>
 </template>
 <script>
-import infoIcon from '@/components/info-icon/Info-icon';
+import { InfoIcon } from '@/components/info-icon/Info-icon';
 export default {
-    components: { infoIcon },
+    components: { InfoIcon },
     data() {
         return {
             infos: [

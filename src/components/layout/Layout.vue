@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import HeaderTop from '@/components/header/HeaderTop'
+import { HeaderTop } from '@/components/header'
 
 export default {
     components: { HeaderTop },

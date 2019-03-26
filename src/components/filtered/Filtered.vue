@@ -39,8 +39,8 @@
     </div>
 </template>
 <script>
-import Selected from '@/components/selected/Selected';
-import Switched from '@/components/switch/Switch';
+import { Selected } from '@/components/selected';
+import { Switched } from '@/components/switch';
 
 export default {
     name: 'Filtered',

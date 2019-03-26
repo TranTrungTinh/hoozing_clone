@@ -21,9 +21,10 @@ export default {
     display: flex;
     align-items: center;
     padding: 5px 0;
-}
-.info-icon i {
-    font-size: 16px;
+
+    & i {
+        font-size: 16px;
+    }
 }
 .pre-data,
 .sub-data {

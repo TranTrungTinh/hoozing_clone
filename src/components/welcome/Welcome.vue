@@ -116,7 +116,7 @@
 </template>
 
 <script>
-import Selected from '@/components/selected/Selected';
+import { Selected } from '@/components/selected';
 import { VueTyper } from 'vue-typer';
 import CountTo from 'vue-count-to';
 

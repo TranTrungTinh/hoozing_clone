@@ -25,8 +25,8 @@ for (let i = 0; i < 41; i++) {
     content: 'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
   })
 }
-import Thumbnail from '@/components/thumbnail/Thumbnail';
-import ThumbnailList from '@/components/thumbnail-list/ThumbnailList';
+import { Thumbnail } from '@/components/thumbnail';
+import { ThumbnailList } from '@/components/thumbnail-list';
 
 export default {
     components: { Thumbnail, ThumbnailList },
